@@ -76,3 +76,19 @@
 # # Start this program by
 # # calling the main function.
 # main()
+
+# with open("wk2\cans.txt", "r") as file:
+#     for line in file:
+#         print(line.rstrip())
+
+
+with open("wk2\cans.txt", "r") as file:
+    names = []
+    for line in file:
+        words = line.split()
+        if words:
+            name = words[0] + words[1]
+            names.append(name)
+
+for i, name in enumerate(names, 1):
+    print(f"{i}. {name}")
