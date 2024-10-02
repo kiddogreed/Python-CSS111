@@ -20,3 +20,24 @@ Use pytest to run the test function.
 Read the output of pytest and use that output to help you find and fix mistakes in both your program function and test function.
 
 
+# 👇️ In a virtual environment or using Python 2
+pip install pytest
+
+# 👇️ For Python 3 (could also be pip3.10 depending on your version)
+pip3 install pytest
+
+# 👇️ If you get a permissions error
+sudo pip3 install pytest
+pip install pytest --user
+
+# 👇️ If you don't have pip in your PATH environment variable
+python -m pip install pytest
+
+# 👇️ For Python 3 (could also be pip3.10 depending on your version)
+python3 -m pip install pytest
+
+# 👇️ Using py alias (Windows)
+py -m pip install pytest
+
+# 👇️ For Anaconda
+conda install -c anaconda pytest
