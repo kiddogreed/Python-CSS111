@@ -1,7 +1,7 @@
 #Author John Russelle Domingo
 #Date 2024-10-03
 #updated_date 2024-10-05
-#verion 5
+#verion 5.2
 from pytest import approx
 #organized import using \
 from water_flow import water_column_height, \
@@ -52,16 +52,10 @@ def test_reynolds_number():
     assert reynolds_number(0.286870,1.65) == approx(471729,abs=1)  
     assert reynolds_number(0.286870,1.75) == approx(500318,abs=1)   
 
-
-# def test_pressure_loss_from_pipe_reduction():
-#     assert pressure_loss_from_pipe_reduction(0.28687,0.00,1,0.048692) == approx(0.000,abs=0.001)
-#     assert pressure_loss_from_pipe_reduction(0.28687,1.65,471729,0.048692) == approx(-163.744,abs=0.001)
-#     assert pressure_loss_from_pipe_reduction(0.28687,1.75,500318,0.048692) == approx(-184.182,abs=0.001)   
-    # pressure_loss_from_pipe_reduction(0.28687, 1.65, 471729, 0.048692) == approx(-163.744, abs=0.001)
 def test_pressure_loss_from_pipe_reduction():
-    # assert pressure_loss_from_pipe_reduction(0.28687, 0.00, 1, 0.048692) == approx(0.000, abs=0.001)
-    # assert pressure_loss_from_pipe_reduction(0.28687, 1.65, 471729, 0.048692) == approx(-163.744, abs=0.001)
-    # assert pressure_loss_from_pipe_reduction(0.28687, 1.75, 500318, 0.048692) == approx(-184.182, abs=0.001)
+    # assert pressure_loss_from_pipe_reduction(0.28687, 0.00, 1, 0.048692) == approx(0.000, abs=0.001) ?
+    # assert pressure_loss_from_pipe_reduction(0.28687, 1.65, 471729, 0.048692) == approx(-163.744, abs=0.001)?
+    # assert pressure_loss_from_pipe_reduction(0.28687, 1.75, 500318, 0.048692) == approx(-184.182, abs=0.001)?
     assert pressure_loss_from_pipe_reduction(0.28687, 0.00, 1, 0.048692) == approx(0.000, abs=0.001)
     assert pressure_loss_from_pipe_reduction(0.28687, 1.65, 471729, 0.048692) == approx(-163.744, abs=0.001)
     assert pressure_loss_from_pipe_reduction(0.28687, 1.75, 500318, 0.048692) == approx(-184.182, abs=0.001)
