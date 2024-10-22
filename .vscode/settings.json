@@ -1,3 +1,4 @@
 {
-    "editor.minimap.showSlider": "always"
+    "editor.minimap.showSlider": "always",
+    "java.debug.settings.onBuildFailureProceed": true
 }

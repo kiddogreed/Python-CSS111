@@ -1,5 +1,6 @@
 #Author John Russelle Domingo
 #Date: OCT19_2024
+#updated:Oct22_2024
 #Desc:
 """Download both of these files: products.csv and request.csv and save them in the same folder where you will save your Python program.
 Open the products.csv file in VS Code and examine it. Notice that each row in this file contains three values separated by commas: a product number, a product name, and a retail price. Also, notice that each product number in the products.csv file is unique. This means that your program can read the products.csv file into a dictionary and use the product numbers as keys in the dictionary.

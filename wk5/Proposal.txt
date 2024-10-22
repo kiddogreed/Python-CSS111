@@ -1,0 +1,48 @@
+#Author John Russelle Domingo
+#Date: OCT19_2024
+#updated:Oct22_2024
+#Desc:W05 Project: Proposal
+
+1. Program Title: Inventory Management System for Small Retail Businesses
+
+2. Program Description: This project aims to create a simple yet efficient inventory management system for small retail businesses. The system will allow store owners to manage their product inventory, track sales, and generate reports for inventory status, revenue, and restocking needs. It will also include features for adding new products, updating prices, tracking stock levels, and viewing sales reports.
+
+The real-world problem this program solves is the difficulty small business owners face when managing their inventory manually or with inefficient tools. This system will automate these processes, reduce human error, and ensure the business stays organized and up-to-date with stock levels and sales data.
+
+3. Learning Objectives:
+
+Data Handling and File Management: Learn how to work with CSV files for storing and retrieving product and sales data.
+Error Handling: Implement try-except blocks to handle various file operation errors like file not found, permission denied, etc.
+Modular Programming: Gain experience in writing modular Python programs with clear separation of concerns (inventory management, sales, reporting).
+Testing: Implement unit tests to validate the functionality of individual components and ensure the integrity of the system.
+Date and Time Operations: Use Python’s datetime module to record and display time-sensitive information like sales and restocking times.
+User Interface Design (Console): Develop an intuitive console-based interface for interacting with the system.
+4. Modules Used:
+
+csv: For reading and writing product and sales data.
+datetime: For handling timestamps for sales and inventory records.
+unittest: To create and run unit tests for the program.
+os: For checking file paths and existence when dealing with product and sales files.
+sys: To manage program exits and capture console outputs for testing.
+5. Function Names:
+
+read_products(filename): Reads the list of products from a CSV file and stores them in a dictionary.
+add_product(product_details): Adds a new product to the inventory.
+update_stock(product_id, quantity): Updates the stock levels for a specific product.
+process_sale(sales_data): Records a sale, updates inventory, and saves it in the sales record.
+generate_sales_report(): Generates a report of all sales made during a specified period.
+generate_inventory_report(): Provides an overview of current stock levels, indicating which items need restocking.
+calculate_revenue(sales_data): Computes total revenue based on the sales data.
+main_menu(): Displays the main menu and routes the user to different functionalities.
+exit_system(): Handles the proper shutdown of the system, including saving any unsaved data.
+6. Test Function Names:
+
+test_read_products(): Ensures products are read from the CSV file correctly.
+test_add_product(): Validates that products are added to the inventory correctly.
+test_update_stock(): Tests whether the stock is updated properly.
+test_process_sale(): Confirms that sales are processed and inventory is adjusted correctly.
+test_generate_sales_report(): Checks that the sales report is generated with accurate information.
+test_generate_inventory_report(): Verifies that the inventory report lists all products and their stock levels accurately.
+test_calculate_revenue(): Tests the calculation of revenue from sales data.
+test_exit_system(): Tests that the program exits cleanly, saving all necessary data.
+This proposal outlines the development of an inventory management system designed to make day-to-day operations easier for small businesses, allowing owners to automate and streamline their inventory and sales processes efficiently.
